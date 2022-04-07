@@ -1,32 +1,52 @@
+
+body{
+    font-family: 'Dosis', sans-serif;
+    background-color: #efe5b9;
+}
+
 #main-body{
     
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
     text-align: center;
     padding-top: 10% ;
-    color: #353535;
-    background-image: url('https://static.vecteezy.com/system/resources/previews/002/099/721/large_2x/mountain-beautiful-landscape-background-design-illustration-free-vector.jpg');
-    background-image: url('https://static.vecteezy.com/system/resources/previews/002/099/787/large_2x/desert-landscape-background-design-illustration-free-vector.jpg');
-    
+    color: #491708 !important;
+    background-color: #efe5b9;    
 }
 
+#img{
+    display: inline-block;
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    height: 700px;
+    width: 700px;
+    background-color: #efe5b9;
+    
+    background-image: url('images/Sloth.svg');
+    
+    background-repeat: no-repeat;
+    
+    
+}
 h1{
-    font-size: 3.5em !important;
-    color: #ffed7b !important;
-    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 3em !important;
+    color: #c27b49 !important;
+    font-family: 'Dosis', sans-serif;
+
 }
 
 .input-container{
     display: block;
     margin: auto;
-    width: 800px;
+    
     
 }
 
 .input-container label{
     height: 50px;
     text-align: center;
-    color: #0a9396;
+    color: #587024;
     
     display: flex;
     flex-direction:column;
@@ -44,41 +64,22 @@ input[type=tel] {
     border: none;
     color: #2a2c2d;
     font-family: helvetica;
-    font-size: 2em;
+    font-size: 1.5em;
     width: 250px;
     
     text-align: center;
     margin: auto;
-    background-color: #e6e6e6;
+    background-color: #fff;
     display: flex;
     flex-direction:column;
     border-radius: 40px;
-    border: 2px solid linear-gradient(90deg, rgba(15,185,189,1) 0%, rgba(6,75,77,1) 100%);
-
-    color: #6e6e6e;
-  }
-.border{
-    background-color:linear-gradient(90deg, rgba(15,185,189,1) 0%, rgba(6,75,77,1) 100%);
-    border-radius 40px;
-    width: 255px;
- 
-}  
-
-  .output{
-      margin-top: 60px;
-      color: #202020;
+    border: 2px solid #202020;
+    color: #89837a;
   }
 
 
-#curved_div{
-    position: fixed;
-    top: 600px;
-    left: -50vw;
-    display: block;
-    width: 200vw;
-    height: 50vw;
-    background-color: rgba(0,0,0,0);
-    z-index: 0;
-    border-radius: 50% 50% 0 0;
+
+.output{
+    margin-top: 60px;
+    color: #202020;
 }
-
