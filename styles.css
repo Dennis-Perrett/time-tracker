@@ -2,17 +2,34 @@
 body{
     font-family: 'Dosis', sans-serif;
     background-color: #efe5b9;
+    transition:  0.1s linear;
 }
 
-#main-body{
+
+
+.main-body{
     
     width: 50vw;
     height: 100vh;
     text-align: center;
     padding-top: 10% ;
     color: #491708 !important;
-    background-color: #efe5b9;    
+    
 }
+
+#mb-dog{
+    display: none;
+    
+}
+
+#mb-dog label{
+    color:#f5d494;
+}
+
+#mb-dog h1{
+    color:rgb(247, 219, 170);
+}
+
 
 /* Sloth home */
 /*https://www.vecteezy.com/vector-art/210784-sloth-vector-illustration*/ 
@@ -26,16 +43,17 @@ body{
     width: 700px;
     background-color: #efe5b9;
 
-    background-image: url('Sloth.svg');
+    transition:  0.1s linear;
     
     background-repeat: no-repeat;
     
     
 }
-h1{
+.text{
     font-size: 3em !important;
-    color: #c27b49 !important;
+    color: #c27b49;
     font-family: 'Dosis', sans-serif;
+    transition: color 0.1s linear;
 
 }
 
@@ -43,17 +61,22 @@ h1{
     display: block;
     margin: auto;
     
-    
 }
 
 .input-container label{
     height: 50px;
     text-align: center;
-    color: #587024;
-    
     display: flex;
     flex-direction:column;
   }
+
+.sloth label{
+    color: #948323;
+}
+
+.dog label{
+    color: rgb(247, 219, 170);
+}
 
 .input-container label span {
     display: inline-block;
@@ -92,3 +115,44 @@ input[type=tel]:focus{
     margin-top: 60px;
     color: #202020;
 }
+
+button{
+    position: absolute;
+    top: 90%;
+    left: 50px;
+    width: 80px;
+    height: 30px;
+    border-radius: 25px;
+    border: 2px solid #afa186;
+    
+    background-color: #c49a57;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    transition: none;
+    padding-left: 3px;
+    
+
+    -moz-box-shadow:    inset 0 0 8px rgba(0,0,0,.2);
+    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,.2);
+    box-shadow:         inset 0 0 8px rgba(0,0,0,.2);
+
+    
+}
+
+button #slider{
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: #efe5b9;
+    
+    transition: all .1s linear;
+    margin-left: 0px;
+    
+    
+}
+
+.dog{
+    display: none;
+}
+
