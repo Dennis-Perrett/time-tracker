@@ -1,0 +1,61 @@
+@media only screen and (max-width: 600px) {
+    .main-body{
+      width: 100vw;
+      height: 90vh;
+    }
+    
+    .input-container label{
+        height: 30px;
+    }
+
+    .input-container label span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 40px;
+        font-size: 1em;
+      }
+
+    input[type=tel]{
+        padding-top: 5px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    button{
+        position: relative;
+        display: block;
+        margin: auto;
+        left: 0px;
+        top: 0px;
+        
+    }
+
+    .text{
+        font-size: 2em !important;
+    }
+
+    .img{
+        z-index: -1;
+        
+        left: 50%;
+        top: 65%;
+        
+        
+    }
+
+    #imgsloth{
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+    }
+    #imgdog{
+        width: 250px;
+        height: 250px;
+        margin-top: 50px;
+        margin-left: -125px;
+    }
+
+    .output{
+        margin-top: 20px;
+    }
+  }
