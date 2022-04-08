@@ -58,7 +58,7 @@ body{
 }
 
 #imgdog{
-    margin-top: 50px;
+    margin-top: 100px;
     background-image: url('Dog_ohnebg.svg');
     opacity: 0;
 }
@@ -117,13 +117,23 @@ input[type=tel] {
     color: #89837a;
   }
 
-input[type=tel]:focus{
-    border-color: #5f9b00;
+
+#mb-sloth input[type=tel]:focus{
+    border-color: #0a9396;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(19, 161, 0, 0.2);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(19, 161, 0, 0.2);
+    
+    
     
 }
+
+#mb-dog input[type=tel]:focus{
+    border-color: #ee9b00;
+    outline: 0;
+    
+    
+    
+}
+
 
 .output{
     margin-top: 60px;
