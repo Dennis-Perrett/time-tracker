@@ -43,7 +43,9 @@ body{
     width: 700px;
     background-color: #efe5b9;
 
-    transition:  0.1s linear;
+    transition: all 0.1s linear;
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
     
     background-repeat: no-repeat;
     
