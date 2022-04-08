@@ -34,23 +34,35 @@ body{
 /* Sloth home */
 /*https://www.vecteezy.com/vector-art/210784-sloth-vector-illustration*/ 
 
-#img{
+.img{
     display: inline-block;
     position: fixed;
     left: 50%;
     top: 10%;
     height: 700px;
     width: 700px;
-    background-color: #efe5b9;
+    /*background-color: #efe5b9;*/
 
-    transition: all 0.1s linear;
-    -webkit-transition: all .1s ease-out;
-    -moz-transition: all .1s ease-out;
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
     
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;  
+    opacity: 1;
     
 }
+
+#imgsloth{
+    background-image: url('Sloth3_ohnebg.svg');
+    opacity: 1;
+}
+
+#imgdog{
+    margin-top: 50px;
+    background-image: url('Dog_ohnebg.svg');
+    opacity: 0;
+}
+
 .text{
     font-size: 3em !important;
     color: #c27b49;
@@ -157,4 +169,8 @@ button #slider{
 .dog{
     display: none;
 }
+
+
+
+
 

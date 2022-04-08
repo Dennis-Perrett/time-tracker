@@ -146,39 +146,41 @@ t21.addEventListener('keyup', function (e) { diff_calc_d(t5) });
 t31.addEventListener('keyup', function (e) { diff_calc_d(t5) });
 
 
-
+var unswapped = true
 
 
 function swap_bg() {
-    bgimg = window.getComputedStyle(document.querySelector('#img')).backgroundImage.split("/")
-    f = bgimg[bgimg.length - 1]
-    console.log(f)
-    if (f === 'Sloth3.svg")') {
 
-        document.getElementById('img').style.backgroundImage = "url('Dog.svg')";
-        document.getElementById('img').style.marginTop = "50px";
+    if (unswapped) {
+
+        //document.getElementById('img').style.backgroundImage = "url('Dog.svg')";
+        
         document.body.style.backgroundColor = "#c49a57";
-        document.getElementById('img').style.backgroundColor = "#c49a57";
+        //document.getElementById('img').style.backgroundColor = "#c49a57";
         document.getElementById('mb-sloth').style.display = "none";
         document.getElementById('mb-dog').style.display = "block";
         document.getElementById('slider').style.marginLeft = "49px";
         document.getElementById('slider').style.backgroundColor = "#c49a57";
         document.getElementById('swapper').style.backgroundColor = "#efe5b9";
-
+        document.getElementById('imgsloth').style.opacity = 0;
+        document.getElementById('imgdog').style.opacity = 1;
+        unswapped = false
 
 
     } else {
-        document.getElementById('img').style.backgroundImage = "url('Sloth3.svg')";
+        //document.getElementById('img').style.backgroundImage = "url('Sloth3.svg')";
         document.body.style.backgroundColor = "#efe5b9";
-        document.getElementById('img').style.marginTop = "0px";
-        document.getElementById('img').style.backgroundColor = "#efe5b9";
+        
+        //document.getElementById('img').style.backgroundColor = "#efe5b9";
         document.getElementById('mb-sloth').style.display = "block";
         document.getElementById('mb-dog').style.display = "none";
         document.getElementById('slider').style.marginLeft = "0px";
         document.getElementById('slider').style.backgroundColor = "#efe5b9";
-        document.getElementById('swapper').style.backgroundColor = "#c49a57"
+        document.getElementById('swapper').style.backgroundColor = "#c49a57";
+        document.getElementById('imgsloth').style.opacity = 1;
+        document.getElementById('imgdog').style.opacity = 0;
         
-
+        unswapped = true
     }
 }
 
