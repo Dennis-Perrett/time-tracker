@@ -55,13 +55,24 @@ function get_overtime(finishtime) {
 
 
 
-
+    
 
     time_left = finish_date - hours_to_work
-    var hours = Math.floor(time_left / 1000 / 60 / 60);
-    time_left -= hours * 1000 * 60 * 60;
-    var minutes = Math.floor(time_left / 1000 / 60);
 
+    if (time_left >= 0){
+        var hours = Math.floor(time_left / 1000 / 60 / 60);
+        time_left -= hours * 1000 * 60 * 60;
+        var minutes = Math.floor(time_left / 1000 / 60);
+    }else{
+        var hours = Math.ceil(time_left / 1000 / 60 / 60);
+        time_left -= hours * 1000 * 60 * 60;
+        var minutes = Math.ceil(time_left / 1000 / 60); 
+        if (hours === 0){
+            hours = "-"+hours
+        }
+        minutes = -minutes
+    }
+    
     if (minutes < 10) {
         minutes = '0' + minutes
     }
